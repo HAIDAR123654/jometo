@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e7f5ff;
+  background-color: rgb(246, 16, 16);
 }
 
 .header .logo {
@@ -96,9 +96,9 @@ body {
   text-align: center;
   top: 2rem;
 }
-@media screen and (min-width: 20.1rem) {
+@media screen and (min-width: 20.1em) {
   .content .company-name {
-    color: white;
+    color: rgb(246, 16, 16);
     font-size: 5rem;
     font-weight: 1000;
   }
@@ -264,8 +264,8 @@ body {
   }
   .message {
     color: rgb(56, 31, 31);
-    font-weight: 200;
     font-size: 2rem;
+    background-color: #364fc7;
   }
 }
 @media screen and (max-width: 20em) {
