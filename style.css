@@ -52,17 +52,19 @@ body {
 }
 
 .section-hero {
-  padding: 9.6rem 0;
-  background-color: #a5d8ff;
+  width: 100%;
   height: 50vh;
+}
+
+.overlay {
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+  opacity: 0.9;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.section-services {
-  background-color: #f3f0ff;
 }
 
 .mobile-navbar-btn {
@@ -92,15 +94,15 @@ body {
 }
 @media screen and (min-width: 23.4em) {
   .content .company-name {
-    color: rgb(246, 16, 16);
+    color: white;
     font-size: 5rem;
-    font-weight: 30px;
+    font-weight: 1000;
   }
 }
 
 @media screen and (min-width: 23.4em) {
   .message {
-    color: rgb(56, 31, 31);
+    color: white;
     font-size: 2rem;
     font-weight: bold;
   }
@@ -108,9 +110,9 @@ body {
 .search-bar {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin: 2rem 2rem;
   background: #f1f3f5;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1.5rem 3rem;
   flex-wrap: wrap;
 }
@@ -153,19 +155,20 @@ body {
   margin-left: 2rem;
 }
 
-/* product page css */
-/* .section-services {
-  margin: 1rem 1rem;
-  width: 100%;
-  height: ;
-} */
+.product-list {
+  font-size: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: underline;
+}
 
 .products {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   gap: 1rem;
 }
 .product {
@@ -247,17 +250,6 @@ body {
   }
   .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
     display: none;
-  }
-}
-/* ==================================================== */
-/* Hero section styling for mobile page */
-
-/* =================================================== */
-@media screen and (max-width: 20em) {
-  .company-name {
-    color: rgb(246, 16, 16);
-    font-size: 5rem;
-    font-weight: bold;
   }
 }
 @media screen and (max-width: 23rem) {
