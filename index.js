@@ -7,3 +7,10 @@ const toggleNavbar = () => {
 };
 
 mobuile_nav.addEventListener("click", () => toggleNavbar());
+
+const loginClose = document.querySelector(".login-close");
+const loginPage = document.querySelector(".login");
+
+loginClose.addEventListener("click", () => {
+  loginPage.classList.add("close-login-div");
+});

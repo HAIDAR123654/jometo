@@ -256,3 +256,52 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+/* login page */
+.login {
+  width: 300px;
+  /* top: 25rem; */
+  left: 0;
+  right: 0;
+  margin: 15rem auto;
+  position: absolute;
+  z-index: 300;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: block;
+}
+.close-login-div {
+  display: none;
+}
+.login ion-icon {
+  font-size: 2rem;
+  margin-left: 250px;
+  cursor: pointer;
+}
+.login h2 {
+  font-size: large;
+  margin-bottom: 1rem;
+}
+.login p {
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.login button {
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: black;
+  cursor: pointer;
+}
+.input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+}
