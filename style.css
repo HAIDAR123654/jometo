@@ -260,10 +260,6 @@ body {
 /* login page */
 .login {
   width: 100%;
-  /* top: 25rem; */
-  /* left: 0;
-  right: 0;
-  margin: 25rem auto; */
   position: absolute;
   z-index: 300;
   background-color: white;
@@ -271,7 +267,18 @@ body {
   border-radius: 1rem;
   display: block;
   bottom: 0;
+  animation: loginanimation 1s;
 }
+
+@keyframes loginanimation {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .close-login-div {
   display: none;
 }
@@ -282,12 +289,13 @@ body {
 }
 .login h2 {
   font-size: large;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .login p {
   font-size: medium;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .login button {
   padding: 1rem 2rem;
@@ -301,7 +309,7 @@ body {
 }
 .input {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 1rem;
   border: 1px solid lightgray;
