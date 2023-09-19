@@ -329,7 +329,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  gap: 1rem;
+  gap: 2rem;
 }
 .first_1 {
   width: 7rem;
@@ -342,7 +342,7 @@ body {
   object-fit: cover;
 }
 .collections h2 {
-  margin: 1rem 1rem;
+  margin: 2rem 2rem;
   font-size: large;
   font-weight: bold;
 }

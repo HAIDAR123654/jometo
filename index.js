@@ -26,3 +26,18 @@ document.addEventListener("click", function (event) {
     div.style.display = "none";
   }
 });
+
+//whenever user scroll page up login div display should be none
+var div = document.getElementById("loginid");
+
+window.addEventListener("scroll", function () {
+  // Check if the user is scrolling up (scrolling towards the top of the page)
+  if (window.scrollY > 0) {
+    // If scrolling up, hide the div
+    div.style.display = "none";
+  }
+  // else {
+  // If not scrolling up (e.g., scrolling down or at the top), show the div
+  // div.style.display = "block"; // You can use "block" or "inline-block" depending on your layout
+  // }
+});
