@@ -172,11 +172,12 @@ body {
   gap: 1rem;
 }
 .product {
-  height: 35rem;
-  width: 35rem;
+  /* height: 20rem; */
+  width: 15rem;
   border: 1px solid rgb(230, 181, 181);
   border-radius: 1rem;
   margin-top: 2rem;
+  padding: 1rem;
 }
 .product img {
   width: 100%;
@@ -196,6 +197,7 @@ body {
   border: none;
   border-radius: 3rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 @media (max-width: 62em) {
   .header {
@@ -222,7 +224,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     transform: translateX(100%);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
