@@ -259,24 +259,25 @@ body {
 
 /* login page */
 .login {
-  width: 300px;
+  width: 100%;
   /* top: 25rem; */
-  left: 0;
+  /* left: 0;
   right: 0;
-  margin: 15rem auto;
+  margin: 25rem auto; */
   position: absolute;
   z-index: 300;
   background-color: white;
   padding: 1rem 2rem;
   border-radius: 1rem;
   display: block;
+  bottom: 0;
 }
 .close-login-div {
   display: none;
 }
 .login ion-icon {
   font-size: 2rem;
-  margin-left: 250px;
+  margin-left: 300px;
   cursor: pointer;
 }
 .login h2 {
