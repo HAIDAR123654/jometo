@@ -8,13 +8,6 @@ const toggleNavbar = () => {
 
 mobuile_nav.addEventListener("click", () => toggleNavbar());
 
-const loginClose = document.querySelector(".login-close");
-const loginPage = document.querySelector(".login");
-
-loginClose.addEventListener("click", () => {
-  loginPage.classList.add("close-login-div");
-});
-
 // event clicked triggred on clicking on anywhere in the DOM-------------------------------
 
 document.addEventListener("click", function (event) {
@@ -27,7 +20,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-//whenever user scroll page up login div display should be none
+//whenever user scroll page up login div display should be none--------------------------------
 var div = document.getElementById("loginid");
 var username = document.getElementById("input1");
 var flag = false;
@@ -39,16 +32,25 @@ document.addEventListener("click", function (event) {
 });
 
 window.addEventListener("scroll", function () {
-  // Check if the user is scrolling up (scrolling towards the top of the page)
-  if (window.scrollY > 0 && flag) {
-    // If scrolling up, hide the div
+  if (window.scrollY >= 0 && flag) {
     div.style.display = "block";
   } else {
     div.style.display = "none";
   }
-  flag = false;
-  // else {
-  // If not scrolling up (e.g., scrolling down or at the top), show the div
-  // div.style.display = "block"; // You can use "block" or "inline-block" depending on your layout
-  // }
+});
+const loginClose = document.querySelector(".login-close");
+const loginPage = document.querySelector(".login");
+
+loginClose.addEventListener("click", () => {
+  loginPage.style.display = "none";
+});
+
+// ---------------------------
+username.addEventListener("blur", function () {
+  // Scroll the page to the top (x: 0, y: 0)
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth", // Use "smooth" for smooth scrolling, or "auto" for instant scrolling
+  });
 });
